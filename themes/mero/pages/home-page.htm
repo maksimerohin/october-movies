@@ -25,16 +25,23 @@ sortDirection = "asc"
 
 <div class="row g-4">
     {% for record in records %}
-    <div class="col-lg-4">
-        <div class="card h-100 p-4">
+    <div class="col-lg-6">
+        <div class="card h-100">
             {# Use spaceless tag to remove spaces inside the A tag. #}
             {% spaceless %}
-            <div class="card-body">
-                <h2 class="card-title">{{ record.title }}</h2>
-                <div class="card-text">{{ str_words(record.description, 20) }}</div>
-                {% if detailsPage %}
-                <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-primary">Details</a>
-                {% endif %}
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+                        <img src="{{ record.thumbnail.path }}" alt="">
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ record.title }}</h2>
+                        <div class="card-text">{{ str_words(record.description, 20) }}</div>
+                        <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}" class="btn btn-outline-primary">Details</a>
+                    </div>
+                </div>
             </div>
             {% endspaceless %}
         </div>

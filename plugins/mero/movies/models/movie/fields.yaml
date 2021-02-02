@@ -19,3 +19,14 @@ fields:
         size: small
         span: full
         type: richeditor
+    thumbnail:
+        label: 'mero.movies::lang.movies.thumbnail'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

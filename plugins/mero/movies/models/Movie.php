@@ -24,4 +24,8 @@ class Movie extends Model
      */
     public $rules = [
     ];
+
+    public $attachOne = [
+    	'thumbnail' => 'System\Models\File'
+    ];
 }

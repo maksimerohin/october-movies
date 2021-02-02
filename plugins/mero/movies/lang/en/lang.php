@@ -9,5 +9,6 @@
         'description' => 'Description',
         'movies' => 'Movies',
         'slug' => 'Slug',
+        'thumbnail' => 'Thumbnail',
     ],
 ];
