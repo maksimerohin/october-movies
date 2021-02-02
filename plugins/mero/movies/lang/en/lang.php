@@ -10,5 +10,6 @@
         'movies' => 'Movies',
         'slug' => 'Slug',
         'thumbnail' => 'Thumbnail',
+        'gallery' => 'Gallery',
     ],
 ];

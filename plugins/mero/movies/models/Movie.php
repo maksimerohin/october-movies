@@ -28,4 +28,8 @@ class Movie extends Model
     public $attachOne = [
     	'thumbnail' => 'System\Models\File'
     ];
+
+    public $attachMany = [
+    	'gallery' => 'System\Models\File'
+    ];
 }

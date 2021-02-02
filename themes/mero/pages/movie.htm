@@ -15,7 +15,7 @@ notFoundMessage = "Movie not found"
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
 {% if record %}
-<div class="row">
+<div class="row mb-4">
     <div class="col-md-2">
         <img src="{{ record.thumbnail.path }}" alt="">
     </div>
@@ -25,6 +25,16 @@ notFoundMessage = "Movie not found"
         <div>{{ record.description|raw }}</div>
     </div>
 </div>
+{% if record.gallery.count > 0 %}
+    <h3>Photos</h3>
+    <div class="d-flex p-3 border rounded bg-light">
+        {% for image in record.gallery %}
+        <a href="{{ image.path }}">
+            <img src="{{ image.thumb(150, 150, {'mode':'crop'}) }}" class="img-thumbnail m-1" alt="">
+        </a>
+        {% endfor %}
+    </div>
+{% endif %}
 {% else %}
 {{ notFoundMessage }}
 {% endif %}
