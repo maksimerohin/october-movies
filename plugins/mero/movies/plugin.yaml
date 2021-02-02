@@ -1,0 +1,11 @@
+plugin:
+    name: 'mero.movies::lang.plugin.name'
+    description: 'mero.movies::lang.plugin.description'
+    author: Mero
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    movies-menu-item:
+        label: 'mero.movies::lang.movies.movies'
+        url: mero/movies/movies
+        icon: icon-video-camera

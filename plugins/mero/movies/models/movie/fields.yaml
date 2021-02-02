@@ -1,0 +1,14 @@
+fields:
+    title:
+        label: 'mero.movies::lang.movies.title'
+        span: auto
+        type: text
+    year:
+        label: 'mero.movies::lang.movies.year'
+        span: auto
+        type: text
+    description:
+        label: 'mero.movies::lang.movies.description'
+        size: ''
+        span: full
+        type: textarea
