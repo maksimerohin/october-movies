@@ -8,5 +8,6 @@
         'year' => 'Year',
         'description' => 'Description',
         'movies' => 'Movies',
+        'slug' => 'Slug',
     ],
 ];

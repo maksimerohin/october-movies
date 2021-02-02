@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table mero_movies_movies'
     - builder_table_create_mero_movies_movies.php
+1.0.3:
+    - 'Updated table mero_movies_movies'
+    - builder_table_update_mero_movies_movies.php

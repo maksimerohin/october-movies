@@ -3,12 +3,19 @@ fields:
         label: 'mero.movies::lang.movies.title'
         span: auto
         type: text
+    slug:
+        label: 'mero.movies::lang.movies.slug'
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
     year:
         label: 'mero.movies::lang.movies.year'
         span: auto
         type: text
     description:
-        label: 'mero.movies::lang.movies.description'
-        size: ''
+        label: 'mero.movies::lang.plugin.description'
+        size: small
         span: full
-        type: textarea
+        type: richeditor

@@ -1,6 +1,6 @@
 name: Movies
-form: $/mero/movies/models/movie/fields.yaml
 modelClass: Mero\Movies\Models\Movie
+form: $/mero/movies/models/movie/fields.yaml
 defaultRedirect: mero/movies/movies
 create:
     redirect: 'mero/movies/movies/update/:id'
@@ -8,3 +8,4 @@ create:
 update:
     redirect: mero/movies/movies
     redirectClose: mero/movies/movies
+preview: {  }
