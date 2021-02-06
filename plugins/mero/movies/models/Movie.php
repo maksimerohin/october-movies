@@ -19,6 +19,19 @@ class Movie extends Model
      */
     public $table = 'mero_movies_movies';
 
+	public $belongsToMany = [
+		'genres' =>[
+			'Mero\Movies\Models\Genre',
+			'table' => 'mero_movies_movies_genres',
+		    'order' => 'title'
+		],
+		'genress' =>[
+			'Mero\Movies\Models\Genre',
+			'table' => 'mero_movies_movies_genres',
+		    'order' => 'title'
+		],
+	];
+
     /**
      * @var array Validation rules
      */

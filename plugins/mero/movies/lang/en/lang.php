@@ -11,5 +11,6 @@
         'slug' => 'Slug',
         'thumbnail' => 'Thumbnail',
         'gallery' => 'Gallery',
+        'genres' => 'Genres',
     ],
 ];

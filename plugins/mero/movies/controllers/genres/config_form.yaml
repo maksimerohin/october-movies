@@ -1,0 +1,10 @@
+name: Genres
+form: $/mero/movies/models/genre/fields.yaml
+modelClass: Mero\Movies\Models\Genre
+defaultRedirect: mero/movies/genres
+create:
+    redirect: 'mero/movies/genres/update/:id'
+    redirectClose: mero/movies/genres
+update:
+    redirect: mero/movies/genres
+    redirectClose: mero/movies/genres

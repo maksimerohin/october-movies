@@ -26,15 +26,29 @@ notFoundMessage = "Movie not found"
     </div>
 </div>
 {% if record.gallery.count > 0 %}
-    <h3>Photos</h3>
-    <div class="d-flex p-3 border rounded bg-light">
-        {% for image in record.gallery %}
-        <a href="{{ image.path }}">
-            <img src="{{ image.thumb(150, 150, {'mode':'crop'}) }}" class="img-thumbnail m-1" alt="">
-        </a>
-        {% endfor %}
-    </div>
+<h3>Photos</h3>
+<div class="d-flex p-3 border rounded bg-light">
+    {% for image in record.gallery %}
+    <a href="{{ image.path }}">
+        <img src="{{ image.thumb(150, 150, {'mode':'crop'}) }}" class="img-thumbnail m-1" alt="">
+    </a>
+    {% endfor %}
+</div>
 {% endif %}
+
+{% if record.genres %}
+<h3>Genres</h3>
+<ul class="list-inline">
+    {% for genre in record.genres %}
+    <li class="list-inline-item">
+        <a href="/genres/{{ genre.slug }}">
+            {{ genre.title }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
 {% else %}
 {{ notFoundMessage }}
 {% endif %}

@@ -41,3 +41,18 @@ fields:
             extension: auto
         span: auto
         type: fileupload
+    genres:
+        label: 'mero.movies::lang.movies.genres'
+        nameFrom: title
+        descriptionFrom: description
+        span: auto
+        type: relation
+    genress:
+        label: 'mero.movies::lang.movies.genres'
+        mode: relation
+        separator: comma
+        customTags: true
+        useKey: false
+        span: auto
+        type: taglist
+        nameFrom: title

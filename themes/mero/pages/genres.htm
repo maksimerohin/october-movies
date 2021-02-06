@@ -1,0 +1,30 @@
+title = "Genres"
+url = "/genres/:slug"
+layout = "Default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Mero\Movies\Models\Genre"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<h1>{{ record.title }}</h1>
+
+{% for movie in record.movies %}
+<li class="list-inline-item">
+    <a href="/movie/{{ movie.slug }}">
+        {{ movie.title }}
+    </a>
+</li>
+{% endfor %}
+
+{% else %}
+{{ notFoundMessage }}
+{% endif %}
