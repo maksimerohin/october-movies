@@ -1,0 +1,21 @@
+title = "Actor"
+url = "/actors/:slug"
+layout = "Default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Mero\Movies\Models\Actor"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+<h1>{{ record.name }}</h1>
+{% else %}
+{{ notFoundMessage }}
+{% endif %}

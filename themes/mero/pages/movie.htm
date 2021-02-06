@@ -49,6 +49,19 @@ notFoundMessage = "Movie not found"
 </ul>
 {% endif %}
 
+{% if record.actors %}
+<h3>Actors</h3>
+<ul class="list-inline">
+    {% for actor in record.actors %}
+    <li class="list-inline-item">
+        <a href="/actors/{{ actor.slug }}">
+            {{ actor.name }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
 {% else %}
 {{ notFoundMessage }}
 {% endif %}

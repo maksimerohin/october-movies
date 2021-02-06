@@ -1,0 +1,9 @@
+columns:
+    name:
+        label: 'mero.movies::lang.movies.name'
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: 'mero.movies::lang.movies.slug'
+        type: text

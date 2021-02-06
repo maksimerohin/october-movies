@@ -1,0 +1,10 @@
+name: Actors
+form: $/mero/movies/models/actor/fields.yaml
+modelClass: Mero\Movies\Models\Actor
+defaultRedirect: mero/movies/actors
+create:
+    redirect: 'mero/movies/actors/update/:id'
+    redirectClose: mero/movies/actors
+update:
+    redirect: mero/movies/actors
+    redirectClose: mero/movies/actors

@@ -1,0 +1,23 @@
+fields:
+    name:
+        label: 'mero.movies::lang.movies.name'
+        span: auto
+        type: text
+    slug:
+        label: 'mero.movies::lang.movies.slug'
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    thumbnail:
+        label: 'mero.movies::lang.movies.thumbnail'
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload

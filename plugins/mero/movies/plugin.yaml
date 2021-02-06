@@ -18,3 +18,7 @@ navigation:
                 label: 'mero.movies::lang.movies.genres'
                 url: mero/movies/genres
                 icon: icon-tags
+            side-menu-item3:
+                label: 'mero.movies::lang.movies.actors'
+                url: mero/movies/actors
+                icon: icon-user

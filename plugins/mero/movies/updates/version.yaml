@@ -18,3 +18,15 @@
 1.0.7:
     - 'Created table mero_movies_movies_genres'
     - builder_table_create_mero_movies_movies_genres.php
+1.0.8:
+    - 'Created table mero_movies_actors'
+    - builder_table_create_mero_movies_actors.php
+1.0.9:
+    - 'Created table mero_movies_mivies_actors'
+    - builder_table_create_mero_movies_mivies_actors.php
+1.0.10:
+    - 'Updated table mero_movies_mivies_actors'
+    - builder_table_update_mero_movies_movies_actors.php
+1.0.11:
+    - 'Updated table mero_movies_actors'
+    - builder_table_update_mero_movies_actors.php

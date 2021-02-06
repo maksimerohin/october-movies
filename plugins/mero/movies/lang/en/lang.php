@@ -12,5 +12,7 @@
         'thumbnail' => 'Thumbnail',
         'gallery' => 'Gallery',
         'genres' => 'Genres',
+        'name' => 'Имя',
+        'actors' => 'Actors',
     ],
 ];

@@ -47,12 +47,12 @@ fields:
         descriptionFrom: description
         span: auto
         type: relation
-    genress:
-        label: 'mero.movies::lang.movies.genres'
+    actors:
+        label: 'mero.movies::lang.movies.actors'
         mode: relation
         separator: comma
         customTags: true
+        nameFrom: name
         useKey: false
         span: auto
         type: taglist
-        nameFrom: title
