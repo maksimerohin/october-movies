@@ -5,3 +5,5 @@
 modules
 storage
 vendor
+
+/node_modules
