@@ -2,6 +2,10 @@
 
 let mix = require('laravel-mix');
 
-mix.js('src/app.js', 'js')
-    .sass('src/app.scss', 'css')
-    .setPublicPath('dist');
+// mix.js('src/app.js', 'js')
+//     .sass('src/app.scss', 'css')
+//     .setPublicPath('dist');
+
+mix.js('./themes/mero/assets/js/app.js', 'js')
+    .sass('./themes/mero/assets/sass/style.scss', 'css')
+    .setPublicPath('./themes/mero/assets/dist');

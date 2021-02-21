@@ -1,20 +1,22 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./themes/mero/assets/js/app.js":
+/*!**************************************!*\
+  !*** ./themes/mero/assets/js/app.js ***!
+  \**************************************/
 /***/ (() => {
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  console.log('Loaded!');
+});
 
 /***/ }),
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
+/***/ "./themes/mero/assets/sass/style.scss":
+/*!********************************************!*\
+  !*** ./themes/mero/assets/sass/style.scss ***!
+  \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -84,8 +86,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
-/******/ 			["./src/app.js"],
-/******/ 			["./src/app.scss"]
+/******/ 			["./themes/mero/assets/js/app.js"],
+/******/ 			["./themes/mero/assets/sass/style.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
