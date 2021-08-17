@@ -1,4 +1,5 @@
 title: Movies
 modelClass: Mero\Movies\Models\Movie
+nameFrom: id
 toolbar:
     buttons: reorder_toolbar

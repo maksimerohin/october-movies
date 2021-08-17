@@ -12,8 +12,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sayhi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sayhi */ "./themes/mero/assets/js/sayhi.js");
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('Loaded!');
-  (0,_sayhi__WEBPACK_IMPORTED_MODULE_0__.default)('Maks');
+  console.log('Loaded!'); // sayhi('Maks')
 });
 
 /***/ }),
